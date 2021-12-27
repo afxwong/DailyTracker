@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <!--this intializes a form-->
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8" />
+        <style>
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                text-align: center;
+            }
+
+            button {
+                align-self: center;
+                border-radius: 12px;
+                background-color: #11be37;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            label {
+                font-size: 20px;
+                padding: 20px;
+            }
+            
+            input {
+                width: 10%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=number]:focus {
+                background-color: lightblue;
+            }
+
+            input[type=number] {
+                transition: width 0.4s ease-in-out;
+            }
+
+            input[type=number]:focus {
+                width: 30%;
+            }
+
+            input[type=text]:focus {
+                background-color: lightblue;
+            }
+
+            input[type=text] {
+                transition: width 0.4s ease-in-out;
+            }
+
+            input[type=text]:focus {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="{{url_for('form')}}" method="post">
+                <label for="happiness">Happiness:</label>
+                    <input type="number" name="happiness" id="happiness" min="1" max="10" step="0.1"><br>
+                <label for="stress_level">Stress Level:</label>
+                    <input type="number" name="stress_level" id="stress_level" min="1" max="10" step="0.1"><br>
+                <label for="alcohol_consumption">Alcohol Consumption:</label>
+                    <input type="number" name="alcohol_consumption" id="alcohol_consumption" step="0.1"><br>
+                <label for="healthiness">Healthiness:</label>
+                    <input type="number" name="healthiness" id="healthiness" min="1" max="10" step="0.1"><br>
+                <label for="fitness_level">Fitness Level:</label>
+                    <input type="number" name="fitness_level" id="fitness_level" min="1" max="10" step="0.1"><br>
+                <label for="screen_time">Screen Time:</label>
+                    <input type="number" name="screen_time" id="screen_time" step="0.1"><br>
+                <label for="sleep">Sleep:</label>
+                    <input type="number" name="sleep" id="sleep" step="0.1"><br>
+                <label for="work_time">Work Time:</label>
+                    <input type="number" name="work_time" id="work_time" step="0.1"><br>
+                <label for="steps">Steps:</label>
+                    <input type="number" name="steps" id="steps" ><br>
+                <label for="bicep_curls">Bicep Curls:</label>
+                    <input type="number" name="bicep_curls" id="bicep_curls" step="0.1"><br>
+                <label for="shoulder_press">Shoulder Press:</label>
+                    <input type="number" name="shoulder_press" id="shoulder_press" step="0.1"><br>
+                <label for="leg_raises">Leg Raises:</label>
+                    <input type="number" name="leg_raises" id="leg_raises" step="0.1"><br>
+                <label for="tricep_press">Tricep Press:</label>
+                    <input type="number" name="tricep_press" id="tricep_press" step="0.1"><br>
+                <label for="leg_press">Leg Press:</label>
+                    <input type="number" name="leg_press" id="leg_press" step="0.1"><br>
+                <label for="squat">Squat:</label>
+                    <input type="number" name="squat" id="squat" step="0.1"><br>
+                <label for="russian_twists">Russian Twists:</label>
+                    <input type="number" name="russian_twists" id="russian_twists" step="0.1"><br>
+                <label for="21s">21s:</label>
+                    <input type="number" name="21s" id="21s" step="0.1"><br>
+                <label for="treadmill">Treadmill:</label>
+                    <input type="number" name="treadmill" id="treadmill" step="0.1"><br>
+                <label for="chest-supported_rows">Chest Supported Rows:</label>
+                    <input type="number" name="chest-supported_rows" id="chest-supported_rows" step="0.1"><br>
+                <label for="arm_fly">Arm Fly:</label>
+                    <input type="number" name="arm_fly" id="arm_fly" step="0.1"><br>
+                <label for="chest_press">Chest Press:</label>
+                    <input type="number" name="chest_press" id="chest_press" step="0.1"><br>
+                <label for="chest_explosions">Chest Explosions:</label>
+                    <input type="number" name="chest_explosions" id="chest_explosions" step="0.1"><br>
+                <label for="bench_press">Bench Press:</label>
+                    <input type="number" name="bench_press" id="bench_press" step="0.1"><br>
+                <label for="deadlift">Deadlift:</label>
+                    <input type="number" name="deadlift" id="deadlift" step="0.1"><br>
+                <label for="comments">Comments:</label>
+                    <input type="text" name="comments" id="comments" ><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

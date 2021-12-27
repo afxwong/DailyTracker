@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!-- Create a sidebar -->
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="utf-8" />
+        <style>
+            .sidebar {
+                height: 100%; /* Full-height: remove this if you want "auto" height */
+                width: 250px; /* Set the width of the sidebar */
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: #111; /* Black */
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 20px
+            }
+
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+            .sidebar a:hover {
+                color: #f1f1f1;
+            }
+
+            .menubutton {
+                align-self: center;
+                border-radius: 12px;
+                background-color: #0975ce;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 80%;
+            }
+
+            .menubutton:hover {
+                opacity: 0.8;
+            }
+
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .tomenubutton {
+                align-self: center;
+                border-radius: 12px;
+                background-color: #0ec026;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;      
+            }
+
+            .tomenubutton:hover {
+                opacity: 0.8;
+            }
+
+            h1 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            body {
+                background-color: #5e5e5e;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="http://127.0.0.1:5000/happiness">
+                <button class="menubutton">Happiness</button>
+            </a>
+            <a href="http://127.0.0.1:5000/stress_level">
+                <button class="menubutton">Stress Level</button>
+            </a>
+            <a href="http://127.0.0.1:5000/alocohol_consumption">
+                <button class="menubutton">Alcohol Consumption</button>
+            </a>
+            <a href="http://127.0.0.1:5000/healthiness">
+                <button class="menubutton">Healthiness</button>
+            </a>
+            <a href="http://127.0.0.1:5000/fitness_level">
+                <button class="menubutton">Fitness Level</button>
+            </a>
+            <a href="http://127.0.0.1:5000/screen_time">
+                <button class="menubutton">Screen Time</button>
+            </a>
+            <a href="http://127.0.0.1:5000/sleep">
+                <button class="menubutton">Sleep</button>
+            </a>
+            <a href="http://127.0.0.1:5000/work_time">
+                <button class="menubutton">Work Time</button>
+            </a>
+            <a href="http://127.0.0.1:5000/steps">
+                <button class="menubutton">Steps</button>
+            </a>
+            <a href="http://127.0.0.1:5000/bicep_curls">
+                <button class="menubutton">Bicep Curls</button>
+            </a>
+            <a href="http://127.0.0.1:5000/shoulder_press">
+                <button class="menubutton">Shoulder Press</button>
+            </a>
+            <a href="http://127.0.0.1:5000/leg_raises">
+                <button class="menubutton">Leg Raises</button>
+            </a>
+            <a href="http://127.0.0.1:5000/tricep_press">
+                <button class="menubutton">Tricep Press</button>
+            </a>
+            <a href="http://127.0.0.1:5000/leg_press">
+                <button class="menubutton">Leg Press</button>
+            </a>
+            <a href="http://127.0.0.1:5000/squat">
+                <button class="menubutton">Squat</button>
+            </a>
+            <a href="http://127.0.0.1:5000/russian_twists">
+                <button class="menubutton">Russian Twists</button>
+            </a>
+            <a href="http://127.0.0.1:5000/21s">
+                <button class="menubutton">21s</button>
+            </a>
+            <a href="http://127.0.0.1:5000/treadmill">
+                <button class="menubutton">Treadmill</button>
+            </a>
+            <a href="http://127.0.0.1:5000/chest-supported_rows">
+                <button class="menubutton">Chest-Supported Rows</button>
+            </a>
+            <a href="http://127.0.0.1:5000/arm_fly">
+                <button class="menubutton">Arm Fly</button>
+            </a>
+            <a href="http://127.0.0.1:5000/chest_press">
+                <button class="menubutton">Chest Press</button>
+            </a>
+            <a href="http://127.0.0.1:5000/chest_explosions">
+                <button class="menubutton">Chest Explosions</button>
+            </a>
+            <a href="http://127.0.0.1:5000/bench_press">
+                <button class="menubutton">Bench Press</button>
+            </a>
+            <a href="http://127.0.0.1:5000/deadlift">
+                <button class="menubutton">Deadlift</button>
+            </a>
+
+        </div>
+        <div class="center">
+            <a href="http://127.0.0.1:5000/form">
+                <button class="tomenubutton"><h1>Enter In Data For Today</h1></button>
+            </a>
+        </div>
+    </body>
+</html>
